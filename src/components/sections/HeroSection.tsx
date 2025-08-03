@@ -1,13 +1,15 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Download, ChevronDown } from 'lucide-react'
+import { Github, Linkedin, Download } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const HeroSection = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
     }
@@ -41,22 +43,22 @@ const HeroSection = () => {
           }}
         />
         <div className="absolute inset-0">
-          {[...Array(20)].map((_, i) => (
+          {mounted && [...Array(20)].map((_, i) => (
             <motion.div
               key={i}
               className="absolute w-2 h-2 bg-primary/20 rounded-full"
               style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                left: `${(i * 17 + 23) % 100}%`,
+                top: `${(i * 13 + 37) % 100}%`,
               }}
               animate={{
                 y: [0, -30, 0],
                 opacity: [0.2, 0.8, 0.2],
               }}
               transition={{
-                duration: 3 + Math.random() * 2,
+                duration: 3 + (i % 3),
                 repeat: Infinity,
-                delay: Math.random() * 2,
+                delay: i * 0.2,
               }}
             />
           ))}
@@ -160,24 +162,6 @@ const HeroSection = () => {
               </motion.a>
             ))}
           </motion.div>
-        </motion.div>
-
-        {/* Scroll Indicator */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        >
-          <motion.a
-            href="#about"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="flex flex-col items-center text-muted-foreground hover:text-primary transition-colors"
-          >
-            <span className="text-sm mb-2">Scroll Down</span>
-            <ChevronDown className="w-5 h-5" />
-          </motion.a>
         </motion.div>
       </div>
     </section>
