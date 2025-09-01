@@ -26,32 +26,7 @@ A modern, responsive portfolio website showcasing my journey as an AI enthusiast
 
 
 
-## 📁 Project Structure
 
-\`\`\`
-src/
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── layout/
-│   │   ├── Footer.tsx
-│   │   └── Navbar.tsx
-│   ├── sections/
-│   │   ├── AboutSection.tsx
-│   │   ├── CertificatesSection.tsx
-│   │   ├── ContactSection.tsx
-│   │   ├── ExperienceSection.tsx
-│   │   ├── HeroSection.tsx
-│   │   └── ProjectsSection.tsx
-│   └── theme-provider.tsx
-\`\`\`
-
-## 🎨 Customization
-
-### Colors
-The color scheme is defined in `tailwind.config.js` and uses CSS variables for theming. You can customize colors by modifying the variables in `globals.css`.
 
 ### Content
 Update the personal information in each section component:
