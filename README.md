@@ -11,14 +11,7 @@ A modern, responsive portfolio website showcasing my journey as an AI enthusiast
 - **Fast Performance**: Built with Next.js for optimal performance
 - **SEO Optimized**: Proper meta tags and semantic HTML structure
 
-## 🏗️ Built With
 
-- **Framework**: [Next.js 15](https://nextjs.org/) with App Router
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Theme**: [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## 📋 Sections
 
@@ -31,34 +24,7 @@ A modern, responsive portfolio website showcasing my journey as an AI enthusiast
 
 ## 🚀 Getting Started
 
-### Prerequisites
 
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Clone the repository
-\`\`\`bash
-git clone https://github.com/vibhutisarode/portfolio
-cd portfolio
-\`\`\`
-
-2. Install dependencies
-\`\`\`bash
-npm install
-# or
-yarn install
-\`\`\`
-
-3. Run the development server
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-\`\`\`
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 📁 Project Structure
 
@@ -96,16 +62,6 @@ Update the personal information in each section component:
 - Certificates section: Professional certifications
 - Contact section: Contact information
 
-### Animations
-Animations are handled by Framer Motion. You can customize them by modifying the motion props in each component.
-
-## 📱 Responsive Design
-
-The website is fully responsive with breakpoints:
-- Mobile: < 768px
-- Tablet: 768px - 1024px  
-- Desktop: > 1024px
-
 ## 🔧 Available Scripts
 
 - `npm run dev` - Start development server
@@ -113,30 +69,14 @@ The website is fully responsive with breakpoints:
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
 
-## 🌐 Deployment
 
-The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com/):
-
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy with zero configuration
-
-Alternatively, you can deploy to:
-- [Netlify](https://netlify.com/)
-- [GitHub Pages](https://pages.github.com/)
-- Any static hosting service
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
+##  Contributing
 
 Feel free to fork this repository and make it your own! If you find any bugs or have suggestions, please open an issue.
 
 ## 📧 Contact
 
-Vibhuti Sarode - [vibhutisarode@example.com](mailto:vibhutisarode@example.com)
+Vibhuti Sarode - [vibhutisarode00@gmail.com](mailto:vibhutisarode00@gmail.com)
 
 Project Link: [https://github.com/vibhutisarode/portfolio](https://github.com/vibhutisarode/portfolio)
 
